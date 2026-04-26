@@ -5,7 +5,7 @@ const MembrosPage = () => {
       nome: 'Liderança',
       membros: [
         { nome: 'Nome do Capitão', cargo: 'Capitão Geral', curso: 'Eng. Mecânica' },
-        { nome: 'Nome do Capitão', cargo: 'Vice-Capitão', curso: 'Eng. Elétrica' },
+        { nome: 'Nome do Capitão', cargo: 'Capitão Geral', curso: 'Eng. Elétrica' },
       ],
     },
     {

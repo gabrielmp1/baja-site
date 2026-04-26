@@ -75,10 +75,10 @@ const HomePage = ({ setPage }) => {
             lineHeight: 0.92,
             letterSpacing: '-0.02em',
             margin: '0 0 28px',
-            textTransform: 'uppercase',
+            textTransform: 'uppercase'
           }}>
             Mais que<br />
-            <span style={{ display: 'block', marginTop: '0.15em' }}>Um <span style={{ color: '#F97316' }}>veículo.</span></span>
+            <span style={{ display: 'block', marginTop: '0.15em' }}>Um <span style={{ color: '#F97316' }}>BAJA.</span></span>
           </h1>
 
           <p style={{
