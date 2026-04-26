@@ -11,12 +11,14 @@ const NavBar = ({ currentPage, setPage }) => {
   }, []);
 
   const links = [
-  { id: 'home', label: 'Início' },
-  { id: 'historia', label: 'História' },
-  { id: 'processo', label: 'Processo Seletivo' },
-  { id: 'noticias', label: 'Notícias' },
-  { id: 'patrocinadores', label: 'Patrocinadores' },
-  { id: 'membros', label: 'Início' }];
+    { id: 'home', label: 'Início' },
+    { id: 'historia', label: 'História' },
+    { id: 'processo', label: 'Processo Seletivo' },
+    { id: 'noticias', label: 'Notícias' },
+    { id: 'patrocinadores', label: 'Patrocinadores' },
+    { id: 'membros', label: 'Membros' },
+    { id: 'contato', label: 'Contato' },
+  ];
 
 
   const navStyle = {

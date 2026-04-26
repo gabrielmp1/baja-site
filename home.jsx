@@ -149,7 +149,7 @@ const HomePage = ({ setPage }) => {
             <div style={{ display: 'inline-block', background: '#F97316', color: '#fff', fontFamily: 'Oswald, sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 2, marginBottom: 20 }}>Projetos Veiculares</div>
             <h2 style={{ fontFamily: 'Oswald, sans-serif', fontWeight: 700, fontSize: 'clamp(28px,3vw,44px)', color: '#0A0A0A', textTransform: 'uppercase', letterSpacing: '-0.01em', margin: 0 }}>Da consolidação à próxima geração.</h2>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 24 }}>
             {/* Vitinho */}
             <div style={{ borderRadius: 8, overflow: 'hidden', border: '1px solid #e8e8e8' }}>
               <div style={{ background: '#0A0A0A', padding: '40px 44px' }}>
@@ -251,7 +251,13 @@ const HomePage = ({ setPage }) => {
         @keyframes lineDown { 0%,100%{opacity:0;transform:scaleY(0.3)} 50%{opacity:1;transform:scaleY(1)} }
         @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
         @media (max-width: 768px) {
-          section > div[style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; gap: 24px !important; }
+          section > div > div[style*="grid-template-columns: 1fr 1fr"],
+          section > div[style*="grid-template-columns: 1fr 1fr"] {
+            grid-template-columns: 1fr !important;
+            gap: 24px !important;
+          }
+          section { padding-left: 20px !important; padding-right: 20px !important; }
+          h1 { font-size: clamp(40px, 12vw, 72px) !important; }
         }
       `}</style>
     </div>);
