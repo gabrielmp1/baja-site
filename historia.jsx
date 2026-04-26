@@ -1,14 +1,14 @@
 // História Page — Alternating Timeline
 const HistoriaPage = () => {
   const marcos = [
-  { data: 'Maio de 2022', titulo: 'Fundação da Equipa', desc: 'A Baja Griffon nasce no IFF Campus Campos Centro, reunindo estudantes de engenharia e ensino médio técnico com o objetivo de competir na Baja SAE Brasil. O nome "Griffon" — criatura mitológica de força e nobreza — simboliza a ambição do projeto.', lado: 'direita', destaque: true, tag: 'Marco Fundador' },
-  { data: '2022–2023', titulo: 'Ciclo Vitinho — Concepção', desc: 'Início do desenvolvimento do primeiro protótipo. A equipa aprende a fabricar um chassi tubular em aço, projetar a suspensão e integrar os sistemas mecânicos. O Vitinho ganha forma como veículo educacional e competitivo.', lado: 'esquerda', tag: 'Desenvolvimento' },
-  { data: '2023–2024', titulo: 'Primeiras Competições', desc: 'A Baja Griffon estreia em competições regionais com o Vitinho. As pistas revelam pontos de melhoria e fortalecem a cultura de engenharia orientada por dados. A experiência competitiva transforma o conhecimento académico em prática.', lado: 'direita', tag: 'Competição' },
-  { data: '2024–2025', titulo: 'Consolidação e Crescimento', desc: 'A equipa expande seus subsistemas administrativos e operacionais, estruturando-se como uma organização profissional. Parcerias com instituições colaboradoras são firmadas, ampliando o ecossistema Baja Griffon.', lado: 'esquerda', tag: 'Expansão' },
-  { data: 'Janeiro de 2026', titulo: 'Início do BG02', desc: 'Com o Vitinho encerrando seu ciclo competitivo, a equipa lança oficialmente o desenvolvimento técnico do BG02. O novo projeto incorpora todas as lições aprendidas, com foco total em conformidade regulatória SAE e máxima competitividade.', lado: 'direita', destaque: true, tag: 'Novo Projeto' },
-  { data: '2026', titulo: 'Regional Sudeste', desc: 'Participação no Regional Sudeste com o BG02, testando o veículo em condições de competição oficial pela primeira vez. Os dados coletados alimentam o refinamento final para a competição nacional.', lado: 'esquerda', tag: 'Competição 2026', futuro: true },
-  { data: '2027', titulo: 'Competição Nacional Baja SAE', desc: 'Meta máxima do ciclo BG02: participar da Competição Nacional Baja SAE com o veículo mais preparado da história da equipa, consolidando a Baja Griffon como referência nacional em equipes de base universitária.', lado: 'direita', tag: 'Meta Nacional', futuro: true }];
-
+    { data: '2022–2023', titulo: 'Estruturação da Equipe', desc: 'Processo inicial de formação, estruturação e organização interna da equipe Baja Griffon, preparando o terreno para os projetos futuros.', lado: 'direita', destaque: true, tag: 'Fundação' },
+    { data: '2024', titulo: 'O Primeiro Carro e Estreia', desc: 'Conclusão da fabricação do nosso primeiro protótipo e a grande estreia da equipe nas pistas durante a competição Regional de 2024.', lado: 'esquerda', tag: 'Desenvolvimento' },
+    { data: '2024–2025', titulo: 'Aprendizado e Crescimento', desc: 'Período de intenso aprendizado prático e amadurecimento técnico com as competições, fortalecendo a cultura de engenharia e a união do grupo.', lado: 'direita', tag: 'Evolução' },
+    { data: 'Final de 2025', titulo: 'Fim do Ciclo Vitinho', desc: 'Marca oficialmente o encerramento do ciclo do nosso primeiro carro, o Vitinho, abrindo espaço para uma nova geração de projetos e inovações da equipe.', lado: 'esquerda', tag: 'Transição' },
+    { data: 'Janeiro de 2026', titulo: 'Início do BG02', desc: 'Com o Vitinho encerrando seu ciclo competitivo, a equipa lança oficialmente o desenvolvimento técnico do BG02. O novo projeto incorpora todas as lições aprendidas, com foco total em conformidade regulatória SAE e máxima competitividade.', lado: 'direita', destaque: true, tag: 'Novo Projeto' },
+    { data: '2026', titulo: 'Regional Sudeste', desc: 'Participação no Regional Sudeste com o BG02, testando o veículo em condições de competição oficial pela primeira vez. Os dados coletados alimentam o refinamento final para a competição nacional.', lado: 'esquerda', tag: 'Competição 2026', futuro: true },
+    { data: '2027', titulo: 'Competição Nacional Baja SAE', desc: 'Meta máxima do ciclo BG02: participar da Competição Nacional Baja SAE com o veículo mais preparado da história da equipa, consolidando a Baja Griffon como referência nacional em equipes de base universitária.', lado: 'direita', tag: 'Meta Nacional', futuro: true }
+  ];
 
   return (
     <div style={{ background: '#fff', minHeight: '100vh' }}>
@@ -93,6 +93,5 @@ onMouseLeave={(e) => {e.currentTarget.style.transform = 'none';e.currentTarget.s
     <h3 style={{ fontFamily: 'Oswald, sans-serif', fontWeight: 700, fontSize: 22, color: '#0A0A0A', textTransform: 'uppercase', letterSpacing: '0.01em', margin: '0 0 12px' }}>{m.titulo}</h3>
     <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 14, color: '#666', lineHeight: 1.75, margin: 0 }}>{m.desc}</p>
   </div>;
-
 
 Object.assign(window, { HistoriaPage, TimelineCard });
