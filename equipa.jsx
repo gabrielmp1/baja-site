@@ -11,7 +11,7 @@ const EquipaPage = () => {
     { id: 'seguranca', label: 'Segurança e Ergonomia', tipo: 'Operacional', cor: '#0A0A0A', icon: '🛡️', desc: 'EPI, rollcage, cinto e ergonomia do piloto. Assegura proteção total conforme o regulamento SAE.' },
     { id: 'comercial', label: 'Comercial', tipo: 'Administrativo', cor: '#b45309', icon: '🤝', desc: 'Captação de patrocinadores, parcerias estratégicas e gestão de contratos com empresas apoiadoras.' },
     { id: 'gestao', label: 'Gestão', tipo: 'Administrativo', cor: '#b45309', icon: '📋', desc: 'Planeamento, cronograma de projeto, controlo financeiro e coordenação entre subsistemas.' },
-    { id: 'marketing', label: 'Marketing', tipo: 'Administrativo', cor: '#b45309', icon: '📣', desc: 'Comunicação institucional, redes sociais, identidade visual e divulgação da equipa.' },
+    { id: 'marketing', label: 'Marketing', tipo: 'Administrativo', cor: '#b45309', icon: '📣', desc: 'Comunicação institucional, redes sociais, identidade visual e divulgação da equipe.' },
   ];
 
   const operacionais = setores.filter(s => s.tipo === 'Operacional');
@@ -42,7 +42,7 @@ const EquipaPage = () => {
             <span style={{ color: '#F97316', fontFamily: 'DM Sans, sans-serif', fontSize: 12, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase' }}>IFF · Campos Centro</span>
           </div>
           <h1 style={{ fontFamily: 'Oswald, sans-serif', fontWeight: 800, fontSize: 'clamp(40px,5vw,68px)', color: '#fff', letterSpacing: '-0.03em', lineHeight: 1.05, margin: '0 0 24px', maxWidth: 700 }}>
-            A Equipa por trás<br />do <span style={{ color: '#F97316' }}>Baja Griffon.</span>
+            A Equipe por trás<br />do <span style={{ color: '#F97316' }}>Baja Griffon.</span>
           </h1>
           <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 17, color: 'rgba(255,255,255,0.6)', maxWidth: 520, lineHeight: 1.75, margin: 0 }}>
             Subsistemas integrados que funcionam como uma empresa real, formando engenheiros prontos para o mercado global.
@@ -91,7 +91,7 @@ const EquipaPage = () => {
               </div>
               <div style={{ padding: '32px 40px' }}>
                 <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 15, color: '#444', lineHeight: 1.8, margin: 0 }}>
-                  O Vitinho representa o alicerce da Baja Griffon: o primeiro veículo a consolidar a equipa como uma força competitiva. Após anos de aprendizado intensivo e presença em competições regionais, o Vitinho encerra seu ciclo competitivo em <strong style={{ color: '#0A0A0A' }}>2026</strong>, cumprindo sua missão de formar a próxima geração de engenheiros.
+                  O Vitinho representa o alicerce da Baja Griffon: o primeiro veículo a consolidar a equipe como uma força competitiva. Após anos de aprendizado intensivo e presença em competições regionais, o Vitinho encerra seu ciclo competitivo em <strong style={{ color: '#0A0A0A' }}>2026</strong>, cumprindo sua missão de formar a próxima geração de engenheiros.
                 </p>
               </div>
             </div>

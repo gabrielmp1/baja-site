@@ -17,7 +17,7 @@ const PatrocinadoresPage = () => {
       cor: '#6B7280',
       bg: '#F9F9F9',
       border: '#D1D5DB',
-      desc: 'Logo no veículo e materiais digitais oficiais da equipa.',
+      desc: 'Logo no veículo e materiais digitais oficiais da equipe.',
       patrocinadores: [
         { nome: 'Empresa Parceira C', area: 'Tecnologia' },
         { nome: 'Empresa Parceira D', area: 'Logística' },
@@ -115,7 +115,7 @@ const PatrocinadoresPage = () => {
       <section style={{ background: '#F97316', padding: '72px 48px', textAlign: 'center' }}>
         <div style={{ maxWidth: 560, margin: '0 auto' }}>
           <h2 style={{ fontFamily: 'Oswald, sans-serif', fontWeight: 700, fontSize: 'clamp(28px,3.5vw,48px)', color: '#fff', textTransform: 'uppercase', letterSpacing: '-0.01em', margin: '0 0 16px' }}>Quer apoiar o projeto?</h2>
-          <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 16, color: 'rgba(255,255,255,0.8)', lineHeight: 1.7, margin: '0 0 32px' }}>Entre em contato com nossa equipa comercial. Temos planos flexíveis para todos os tamanhos de empresa.</p>
+          <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 16, color: 'rgba(255,255,255,0.8)', lineHeight: 1.7, margin: '0 0 32px' }}>Entre em contato com nossa equipe comercial. Temos planos flexíveis para todos os tamanhos de empresa.</p>
           <a href="#contato" style={{ display: 'inline-block', background: '#fff', color: '#F97316', textDecoration: 'none', fontFamily: 'Oswald, sans-serif', fontSize: 14, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', padding: '15px 36px', borderRadius: 4, transition: 'all 0.2s' }}
           onMouseEnter={e => { e.currentTarget.style.background = '#0A0A0A'; e.currentTarget.style.color = '#fff'; }}
           onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.color = '#F97316'; }}

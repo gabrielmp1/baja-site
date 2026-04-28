@@ -17,7 +17,7 @@ const HomePage = ({ setPage }) => {
   { id: 'seguranca', label: 'Segurança & Ergonomia', tipo: 'Operacional', icon: '◈', desc: 'EPI, rollcage, cinto e ergonomia do piloto. Proteção total regulamentar.' },
   { id: 'comercial', label: 'Comercial', tipo: 'Administrativo', icon: '◉', desc: 'Captação de patrocinadores, parcerias estratégicas e gestão de contratos.' },
   { id: 'gestao', label: 'Gestão', tipo: 'Administrativo', icon: '◆', desc: 'Planeamento, cronograma, controlo financeiro e coordenação entre subsistemas.' },
-  { id: 'marketing', label: 'Marketing', tipo: 'Administrativo', icon: '◐', desc: 'Comunicação institucional, redes sociais e identidade visual da equipa.' }];
+  { id: 'marketing', label: 'Marketing', tipo: 'Administrativo', icon: '◐', desc: 'Comunicação institucional, redes sociais e identidade visual da equipe.' }];
 
 
   const [tabAtivo, setTabAtivo] = React.useState('Operacional');
@@ -99,7 +99,7 @@ const HomePage = ({ setPage }) => {
             }}
             onMouseEnter={(e) => e.currentTarget.style.background = '#ea580c'}
             onMouseLeave={(e) => e.currentTarget.style.background = '#F97316'}>
-              Conhecer a Equipa</a>
+              Conhecer a Equipe</a>
             <button onClick={() => setPage('historia')} style={{
               background: 'transparent', color: '#fff',
               border: '1.5px solid rgba(255,255,255,0.35)', cursor: 'pointer',

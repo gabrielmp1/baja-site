@@ -5,14 +5,14 @@ const NoticiasPage = () => {
       categoria: 'Competição',
       data: 'Março 2025',
       titulo: 'Baja Griffon confirma presença no Regional Sudeste 2025',
-      resumo: 'Após meses de preparação intensa, a equipa confirma inscrição na competição regional com o Vitinho totalmente revisado e dentro das normas SAE.',
+      resumo: 'Após meses de preparação intensa, a equipe confirma inscrição na competição regional com o Vitinho totalmente revisado e dentro das normas SAE.',
       destaque: true,
     },
     {
       categoria: 'Projeto',
       data: 'Janeiro 2026',
       titulo: 'Início oficial do desenvolvimento do BG02',
-      resumo: 'Com o ciclo competitivo do Vitinho encerrado, a equipa lança o projeto do segundo veículo com foco na Competição Nacional 2027.',
+      resumo: 'Com o ciclo competitivo do Vitinho encerrado, a equipe lança o projeto do segundo veículo com foco na Competição Nacional 2027.',
       destaque: false,
     },
     {
@@ -25,7 +25,7 @@ const NoticiasPage = () => {
     {
       categoria: 'Institucional',
       data: 'Agosto 2024',
-      titulo: 'Equipa apresenta resultados no Congresso Técnico do IFF',
+      titulo: 'Equipe apresenta resultados no Congresso Técnico do IFF',
       resumo: 'Membros da Baja Griffon apresentaram o relatório técnico do ciclo 2023–2024 no congresso académico interno do IFF Campos Centro.',
       destaque: false,
     },
@@ -40,7 +40,7 @@ const NoticiasPage = () => {
       categoria: 'Seletivo',
       data: 'Março 2024',
       titulo: 'Processo seletivo 2024.1 recebe 47 candidatos',
-      resumo: 'O maior processo seletivo da história da equipa encerrou com 47 inscritos. Doze novos membros foram integrados em diferentes subsistemas.',
+      resumo: 'O maior processo seletivo da história da equipe encerrou com 47 inscritos. Doze novos membros foram integrados em diferentes subsistemas.',
       destaque: false,
     },
   ];

@@ -5,21 +5,21 @@ const ProcessoPage = () => {
       num: '01',
       titulo: 'Inscrição Online',
       periodo: 'Abertura do Edital',
-      desc: 'Preencha o formulário de inscrição com seus dados académicos, curso e motivação. Em seguida, nossa equipa realiza a análise dos currículos e cartas de motivação enviados.',
+      desc: 'Preencha o formulário de inscrição com seus dados académicos, curso e motivação. Em seguida, nossa equipe realiza a análise dos currículos e cartas de motivação enviados.',
       requisitos: ['Formulário online', 'Currículo atualizado', 'Carta de motivação', 'Sem experiência prévia exigida'],
     },
     {
       num: '02',
       titulo: 'Entrevista',
       periodo: '1ª semana após inscrições',
-      desc: 'Conversa individual com líderes da equipa sobre motivação, disponibilidade e área de interesse. Valorizamos comprometimento, trabalho em equipa e vontade de aprender.',
+      desc: 'Conversa individual com líderes da equipe sobre motivação, disponibilidade e área de interesse. Valorizamos comprometimento, trabalho em equipe e vontade de aprender.',
       requisitos: ['15–20 minutos por candidato', 'Banca com 2–3 membros', 'Realizada no laboratório'],
     },
     {
       num: '03',
       titulo: 'Dinâmica em Grupo',
       periodo: '2ª semana após inscrições',
-      desc: 'Atividade coletiva para avaliar colaboração, comunicação e raciocínio sob pressão. Os candidatos trabalham em equipa para resolver um desafio técnico ou criativo.',
+      desc: 'Atividade coletiva para avaliar colaboração, comunicação e raciocínio sob pressão. Os candidatos trabalham em equipe para resolver um desafio técnico ou criativo.',
       requisitos: ['Grupos de 4–6 pessoas', 'Duração: 60 minutos', 'Observação por membros seniores'],
     },
     {
@@ -39,7 +39,7 @@ const ProcessoPage = () => {
         <div style={{ maxWidth: 1280, margin: '0 auto', position: 'relative', zIndex: 2 }}>
           <div style={{ display: 'inline-block', background: '#F97316', color: '#fff', fontFamily: 'Oswald, sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 2, marginBottom: 24 }}>Processo Seletivo</div>
           <h1 style={{ fontFamily: 'Oswald, sans-serif', fontWeight: 700, fontSize: 'clamp(44px, 6vw, 80px)', color: '#fff', textTransform: 'uppercase', letterSpacing: '-0.02em', lineHeight: 0.95, margin: '0 0 24px' }}>
-            Junte-se à<br /><span style={{ color: '#F97316' }}>equipa.</span>
+            Junte-se à<br /><span style={{ color: '#F97316' }}>equipe.</span>
           </h1>
           <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 17, color: 'rgba(255,255,255,0.6)', maxWidth: 520, lineHeight: 1.75, margin: 0 }}>
             Abrimos seleção periodicamente para estudantes do IFF e instituições parceiras. Veja abaixo como funciona o processo.
@@ -123,7 +123,7 @@ const ProcessoPage = () => {
           <div style={{ display: 'inline-block', background: '#F97316', color: '#fff', fontFamily: 'Oswald, sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 2, marginBottom: 20 }}>Dúvidas Frequentes</div>
           <h2 style={{ fontFamily: 'Oswald, sans-serif', fontWeight: 700, fontSize: 'clamp(24px,2.5vw,36px)', color: '#0A0A0A', textTransform: 'uppercase', letterSpacing: '-0.01em', margin: '0 0 48px' }}>Perguntas frequentes.</h2>
           {[
-            { q: 'Preciso ter experiência em engenharia automotiva?', r: 'Não. Valorizamos vontade de aprender, comprometimento e trabalho em equipa. A experiência técnica é desenvolvida dentro da equipa.' },
+            { q: 'Preciso ter experiência em engenharia automotiva?', r: 'Não. Valorizamos vontade de aprender, comprometimento e trabalho em equipe. A experiência técnica é desenvolvida dentro da equipe.' },
             { q: 'Posso fazer parte de mais de um subsistema?', r: 'Inicialmente você é alocado em um subsistema. Com o tempo, conforme disponibilidade e desempenho, é possível colaborar em outros setores.' },
             { q: 'Qual é o nível de comprometimento exigido?', r: 'Aproximadamente 10 horas semanais, incluindo reuniões, tarefas e presença no laboratório. Nos períodos de competição, a dedicação aumenta.' },
             { q: 'O processo seletivo é pago?', r: 'Não. A inscrição e todas as etapas do processo são totalmente gratuitas.' },

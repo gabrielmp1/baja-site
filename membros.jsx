@@ -2,68 +2,78 @@
 const MembrosPage = () => {
   const subsistemas = [
     {
-      nome: 'Liderança',
+      nome: 'Capitania',
       membros: [
-        { nome: 'Nome do Capitão', cargo: 'Capitão Geral', curso: 'Eng. Mecânica' },
-        { nome: 'Nome do Capitão', cargo: 'Capitão Geral', curso: 'Eng. Elétrica' },
+        { nome: 'Davi Rodrigues Cedro de Brito', cargo: 'Capitão', curso: '' },
+        { nome: 'Gabriel Moço Pessanha', cargo: 'Gerente Operacional', curso: '' },
+        { nome: 'Leonarda de Souza Silva', cargo: 'Gerente Administrativa', curso: '' },
       ],
     },
     {
       nome: 'Powertrain',
       membros: [
-        { nome: 'Membro 01', cargo: 'Líder de Subsistema', curso: 'Eng. Mecânica' },
-        { nome: 'Membro 02', cargo: 'Membro', curso: 'Téc. em Mecânica' },
-        { nome: 'Membro 03', cargo: 'Membro', curso: 'Eng. Mecânica' },
+        { nome: 'Davi Rodrigues Cedro de Brito', cargo: 'Líder de Subsistema', curso: '' },
+        { nome: 'Carlos Bruno Gomes Ribeiro', cargo: 'Membro', curso: '' },
+        { nome: 'João Vitor Ribeiro dos Santos', cargo: 'Membro', curso: '' },
+        { nome: 'Lucas Azevedo Manhães', cargo: 'Membro', curso: '' },
+        { nome: 'Mucci David Neto', cargo: 'Membro', curso: '' },
       ],
     },
     {
       nome: 'Elétrica & Eletrônica',
       membros: [
-        { nome: 'Membro 04', cargo: 'Líder de Subsistema', curso: 'Eng. Elétrica' },
-        { nome: 'Membro 05', cargo: 'Membro', curso: 'Téc. em Eletrônica' },
+        { nome: 'Gabriel Moço Pessanha', cargo: 'Líder de Subsistema', curso: '' },
+        { nome: 'Maria Eduarda Silva de Azeredo Araújo', cargo: 'Membro', curso: '' },
+        { nome: 'Daniel Luis Eduardo dos Santos Silva', cargo: 'Membro', curso: '' },
+        { nome: 'Tobias Martins Concebida', cargo: 'Membro', curso: '' },
+        { nome: 'Sérgio Miguel Almeida dos Santos Silva', cargo: 'Membro', curso: '' },
       ],
     },
     {
       nome: 'Dinâmica Veicular',
       membros: [
-        { nome: 'Membro 06', cargo: 'Líder de Subsistema', curso: 'Eng. Mecânica' },
-        { nome: 'Membro 07', cargo: 'Membro', curso: 'Téc. em Mecânica' },
-        { nome: 'Membro 08', cargo: 'Membro', curso: 'Eng. Mecânica' },
+        { nome: 'Breno Moreira Rangel', cargo: 'Líder de Subsistema', curso: '' },
+        { nome: 'Carlos Eduardo Senra Braga Sanches', cargo: 'Membro', curso: '' },
+        { nome: 'Leonan Rodrigues Goulart', cargo: 'Membro', curso: '' },
+        { nome: 'Marco Antônio de Souza Silva Junior', cargo: 'Membro', curso: '' },
+        { nome: 'João Pedro Guimarães Rodrigues', cargo: 'Membro', curso: '' },
+        { nome: 'Daniel Costa de Abreu Sousa', cargo: 'Membro', curso: '' },
+        { nome: 'João Pedro Moura', cargo: 'Membro', curso: '' },
+        { nome: 'Vitor Hugo', cargo: 'Membro', curso: '' },
+        { nome: 'Gabriel José Azevedo Palagar', cargo: 'Membro', curso: '' },
       ],
     },
     {
       nome: 'Chassi & Estrutura',
       membros: [
-        { nome: 'Membro 09', cargo: 'Líder de Subsistema', curso: 'Eng. Civil' },
-        { nome: 'Membro 10', cargo: 'Membro', curso: 'Téc. em Mecânica' },
+        { nome: 'Esther Anomal da Silva Almeida', cargo: 'Membro', curso: '' },
+        { nome: 'Rennan Barros da Fonseca', cargo: 'Membro', curso: '' },
+        { nome: 'Gabriel Nunes', cargo: 'Membro', curso: '' },
       ],
     },
     {
       nome: 'Segurança & Ergonomia',
       membros: [
-        { nome: 'Membro 11', cargo: 'Líder de Subsistema', curso: 'Eng. Mecânica' },
-        { nome: 'Membro 12', cargo: 'Membro', curso: 'Téc. em Segurança' },
+        { nome: 'Kauã Araújo da Silva', cargo: 'Líder de Subsistema', curso: '' },
+        { nome: 'João Marcelo Fernandes Teixeira', cargo: 'Membro', curso: '' },
       ],
     },
     {
       nome: 'Gestão',
       membros: [
-        { nome: 'Membro 13', cargo: 'Líder de Subsistema', curso: 'Administração' },
-        { nome: 'Membro 14', cargo: 'Membro', curso: 'Eng. de Produção' },
-      ],
-    },
-    {
-      nome: 'Comercial',
-      membros: [
-        { nome: 'Membro 15', cargo: 'Líder de Subsistema', curso: 'Administração' },
-        { nome: 'Membro 16', cargo: 'Membro', curso: 'Eng. de Produção' },
+        { nome: 'Leonardo José Faria Viana', cargo: 'Líder de Subsistema', curso: '' },
+        { nome: 'Núbia Santana de Barros', cargo: 'Membro', curso: '' },
       ],
     },
     {
       nome: 'Marketing',
       membros: [
-        { nome: 'Membro 17', cargo: 'Líder de Subsistema', curso: 'Design' },
-        { nome: 'Membro 18', cargo: 'Membro', curso: 'Comunicação' },
+        { nome: 'Rafaela Mamedes Nogueira', cargo: 'Líder de Subsistema', curso: '' },
+        { nome: 'Maycon Carvalho de Sáles de Azevedo', cargo: 'Membro', curso: '' },
+        { nome: 'Lícia Lousada Belmont', cargo: 'Membro', curso: '' },
+        { nome: 'Pedro Marcus Louzada Barbosa', cargo: 'Membro', curso: '' },
+        { nome: 'Camilly Terra', cargo: 'Membro', curso: '' },
+        { nome: 'Kamilly Ohanna Marques Silva', cargo: 'Membro', curso: '' },
       ],
     },
   ];
@@ -153,7 +163,7 @@ const MembrosPage = () => {
                     <div>
                       <div style={{ fontFamily: 'Oswald, sans-serif', fontWeight: 600, fontSize: 16, color: '#0A0A0A', textTransform: 'uppercase', letterSpacing: '0.02em' }}>{m.nome}</div>
                       <div style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 12, color: '#F97316', fontWeight: 500, marginTop: 2 }}>{m.cargo}</div>
-                      <div style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#aaa', marginTop: 2 }}>{m.curso}</div>
+                      {m.curso ? <div style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, color: '#aaa', marginTop: 2 }}>{m.curso}</div> : null}
                     </div>
                   </div>
                 ))}
