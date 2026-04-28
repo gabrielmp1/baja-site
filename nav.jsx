@@ -106,6 +106,11 @@ const NavBar = ({ currentPage, setPage }) => {
         @media (max-width: 900px) {
           .desktop-nav { display: none !important; }
           .mobile-menu-btn { display: flex !important; }
+          nav {
+            background: rgba(10,18,42,0.97) !important;
+            backdrop-filter: blur(12px) !important;
+            border-bottom: 1px solid rgba(249,115,22,0.15) !important;
+          }
         }
         @media (min-width: 901px) {
           .mobile-menu-btn { display: none !important; }
