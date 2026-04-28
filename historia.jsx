@@ -1,5 +1,6 @@
 // História Page — Alternating Timeline
 const HistoriaPage = () => {
+  const isMobile = window.innerWidth <= 768;
   const marcos = [
     { data: '2022–2023', titulo: 'Estruturação da Equipe', desc: 'Processo inicial de formação, estruturação e organização interna da equipe Baja Griffon, preparando o terreno para os projetos futuros.', lado: 'direita', destaque: true, tag: 'Fundação' },
     { data: '2024', titulo: 'O Primeiro Carro e Estreia', desc: 'Conclusão da fabricação do nosso primeiro protótipo e a grande estreia da equipe nas pistas durante a competição Regional de 2024.', lado: 'esquerda', tag: 'Desenvolvimento' },
@@ -14,7 +15,7 @@ const HistoriaPage = () => {
     <div style={{ background: '#fff', minHeight: '100vh' }}>
 
       {/* HERO */}
-      <section style={{ background: '#0A0A0A', padding: '140px 48px 80px', position: 'relative', overflow: 'hidden' }}>
+      <section className="resp-hero" style={{ background: '#0A0A0A', padding: '140px 48px 80px', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', top: 0, right: 0, width: '35%', height: '100%', background: 'linear-gradient(to left, rgba(249,115,22,0.06), transparent)' }} />
         <div style={{ maxWidth: 800, margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 2 }}>
           <div style={{ display: 'inline-block', background: '#F97316', color: '#fff', fontFamily: 'Oswald, sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 2, marginBottom: 24 }}>2022 → 2027</div>
@@ -28,17 +29,24 @@ const HistoriaPage = () => {
       </section>
 
       {/* TIMELINE */}
-      <section style={{ padding: '80px 48px 120px', background: '#fff' }}>
+      <section style={{ padding: isMobile ? '48px 20px 64px' : '80px 48px 120px', background: '#fff' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', position: 'relative' }}>
-          {/* Center line */}
-          <div style={{
+          {/* Center line — desktop only */}
+          {!isMobile && <div style={{
             position: 'absolute', left: '50%', top: 0, bottom: 0, width: 2,
             background: 'linear-gradient(to bottom, #F97316, rgba(10,10,10,0.1) 85%, transparent)',
             transform: 'translateX(-50%)'
-          }} />
+          }} />}
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
             {marcos.map((m, i) => {
+              if (isMobile) {
+                return (
+                  <div key={i} style={{ marginBottom: 16 }}>
+                    <TimelineCard m={m} />
+                  </div>
+                );
+              }
               const isDireita = m.lado === 'direita';
               return (
                 <div key={i} style={{ display: 'flex', alignItems: 'center', marginBottom: 48, position: 'relative' }}>
@@ -56,8 +64,8 @@ const HistoriaPage = () => {
                   <div style={{ flex: 1, paddingLeft: isDireita ? 56 : 0 }}>
                     {isDireita && <TimelineCard m={m} />}
                   </div>
-                </div>);
-
+                </div>
+              );
             })}
           </div>
         </div>

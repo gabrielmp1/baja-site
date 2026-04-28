@@ -56,7 +56,7 @@ const NoticiasPage = () => {
   return (
     <div style={{ background: '#fff', minHeight: '100vh' }}>
       {/* HERO */}
-      <section style={{ background: '#0A0A0A', padding: '140px 48px 80px', position: 'relative', overflow: 'hidden' }}>
+      <section className="resp-hero" style={{ background: '#0A0A0A', padding: '140px 48px 80px', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', top: 0, right: 0, width: '35%', height: '100%', background: 'linear-gradient(to left, rgba(249,115,22,0.06), transparent)' }} />
         <div style={{ maxWidth: 1280, margin: '0 auto', position: 'relative', zIndex: 2 }}>
           <div style={{ display: 'inline-block', background: '#F97316', color: '#fff', fontFamily: 'Oswald, sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 2, marginBottom: 24 }}>Notícias</div>
@@ -89,7 +89,7 @@ const NoticiasPage = () => {
         <div style={{ maxWidth: 1280, margin: '0 auto' }}>
           {/* Notícia destaque */}
           {destaque && (
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 0, border: '1px solid #eee', borderRadius: 8, overflow: 'hidden', marginBottom: 32, cursor: 'pointer', transition: 'box-shadow 0.25s' }}
+            <div className="resp-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 0, border: '1px solid #eee', borderRadius: 8, overflow: 'hidden', marginBottom: 32, cursor: 'pointer', transition: 'box-shadow 0.25s' }}
             onMouseEnter={e => e.currentTarget.style.boxShadow = '0 16px 48px rgba(0,0,0,0.08)'}
             onMouseLeave={e => e.currentTarget.style.boxShadow = 'none'}
             >

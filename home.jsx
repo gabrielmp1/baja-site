@@ -123,7 +123,7 @@ const HomePage = ({ setPage }) => {
 
       {/* ── MISSÃO ── */}
       <section style={{ padding: '96px 48px', background: '#fff', borderBottom: '1px solid #f0f0f0' }}>
-        <div style={{ maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'center' }}>
+        <div className="resp-grid" style={{ maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'center' }}>
           <div>
             <div style={{ display: 'inline-block', background: '#F97316', color: '#fff', fontFamily: 'Oswald, sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 2, marginBottom: 24 }}>Nossa Missão</div>
             <h2 style={{ fontFamily: 'Oswald, sans-serif', fontWeight: 700, fontSize: 'clamp(32px,3.5vw,52px)', color: '#0A0A0A', letterSpacing: '-0.01em', textTransform: 'uppercase', lineHeight: 1.05, margin: '0 0 0' }}>

@@ -49,7 +49,7 @@ const PatrocinadoresPage = () => {
   return (
     <div style={{ background: '#fff', minHeight: '100vh' }}>
       {/* HERO */}
-      <section style={{ background: '#0A0A0A', padding: '140px 48px 80px', position: 'relative', overflow: 'hidden' }}>
+      <section className="resp-hero" style={{ background: '#0A0A0A', padding: '140px 48px 80px', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', top: 0, right: 0, width: '35%', height: '100%', background: 'linear-gradient(to left, rgba(249,115,22,0.06), transparent)' }} />
         <div style={{ maxWidth: 1280, margin: '0 auto', position: 'relative', zIndex: 2 }}>
           <div style={{ display: 'inline-block', background: '#F97316', color: '#fff', fontFamily: 'Oswald, sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 2, marginBottom: 24 }}>Patrocinadores</div>

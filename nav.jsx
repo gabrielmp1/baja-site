@@ -68,7 +68,7 @@ const NavBar = ({ currentPage, setPage }) => {
 
         {/* Mobile hamburger */}
         <button className="mobile-menu-btn" onClick={() => setMenuOpen(!menuOpen)} style={{
-          display: 'none', background: 'none', border: 'none', cursor: 'pointer',
+          background: 'none', border: 'none', cursor: 'pointer',
           flexDirection: 'column', gap: 5, padding: 8
         }}>
           {[0, 1, 2].map((i) =>
@@ -80,18 +80,23 @@ const NavBar = ({ currentPage, setPage }) => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu — overlay fixo */}
       {menuOpen &&
-      <div className="mobile-menu" style={{
-        background: 'rgba(10,18,42,0.99)', padding: '16px 32px 32px',
-        display: 'flex', flexDirection: 'column', gap: 4
+      <div style={{
+        position: 'fixed', top: 72, left: 0, right: 0, bottom: 0,
+        background: '#0A0A0A', padding: '12px 28px 48px',
+        display: 'flex', flexDirection: 'column', gap: 0,
+        zIndex: 999, overflowY: 'auto',
+        borderTop: '1px solid rgba(249,115,22,0.25)',
       }}>
           {links.map((l) =>
         <button key={l.id} onClick={() => {setPage(l.id);setMenuOpen(false);}} style={{
           background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left',
-          color: currentPage === l.id ? '#F97316' : 'rgba(255,255,255,0.8)',
-          fontFamily: 'DM Sans, sans-serif', fontSize: 16, fontWeight: 500,
-          padding: '14px 0', borderBottom: '1px solid rgba(255,255,255,0.06)'
+          color: currentPage === l.id ? '#F97316' : 'rgba(255,255,255,0.85)',
+          fontFamily: 'Oswald, sans-serif', fontSize: 20, fontWeight: 600,
+          padding: '18px 0', borderBottom: '1px solid rgba(255,255,255,0.07)',
+          letterSpacing: '0.06em', textTransform: 'uppercase',
+          transition: 'color 0.15s',
         }}>{l.label}</button>
         )}
         </div>
@@ -101,6 +106,9 @@ const NavBar = ({ currentPage, setPage }) => {
         @media (max-width: 900px) {
           .desktop-nav { display: none !important; }
           .mobile-menu-btn { display: flex !important; }
+        }
+        @media (min-width: 901px) {
+          .mobile-menu-btn { display: none !important; }
         }
       `}</style>
     </nav>);

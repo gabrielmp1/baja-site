@@ -100,7 +100,7 @@ const MembrosPage = () => {
   return (
     <div style={{ background: '#fff', minHeight: '100vh' }}>
       {/* HERO */}
-      <section style={{ background: '#0A0A0A', padding: '140px 48px 80px', position: 'relative', overflow: 'hidden' }}>
+      <section className="resp-hero" style={{ background: '#0A0A0A', padding: '140px 48px 80px', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', top: 0, right: 0, width: '35%', height: '100%', background: 'linear-gradient(to left, rgba(249,115,22,0.06), transparent)' }} />
         <div style={{ maxWidth: 1280, margin: '0 auto', position: 'relative', zIndex: 2, display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', flexWrap: 'wrap', gap: 32 }}>
           <div>
@@ -110,7 +110,7 @@ const MembrosPage = () => {
             </h1>
             <p style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 17, color: 'rgba(255,255,255,0.6)', maxWidth: 440, lineHeight: 1.75, margin: 0 }}>Conheça quem constrói, planeja e representa a Baja Griffon.</p>
           </div>
-          <div style={{ display: 'flex', gap: 32 }}>
+          <div className="resp-stats" style={{ display: 'flex', gap: 32 }}>
             <div style={{ textAlign: 'right' }}>
               <div style={{ fontFamily: 'Oswald, sans-serif', fontWeight: 700, fontSize: 48, color: '#F97316', lineHeight: 1 }}>{totalMembros}</div>
               <div style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 12, color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase', letterSpacing: '0.1em', marginTop: 4 }}>Membros Ativos</div>

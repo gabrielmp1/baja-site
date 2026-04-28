@@ -34,7 +34,7 @@ const ProcessoPage = () => {
   return (
     <div style={{ background: '#fff', minHeight: '100vh' }}>
       {/* HERO */}
-      <section style={{ background: '#0A0A0A', padding: '140px 48px 80px', position: 'relative', overflow: 'hidden' }}>
+      <section className="resp-hero" style={{ background: '#0A0A0A', padding: '140px 48px 80px', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', top: 0, right: 0, width: '40%', height: '100%', background: 'linear-gradient(to left, rgba(249,115,22,0.06), transparent)' }} />
         <div style={{ maxWidth: 1280, margin: '0 auto', position: 'relative', zIndex: 2 }}>
           <div style={{ display: 'inline-block', background: '#F97316', color: '#fff', fontFamily: 'Oswald, sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 2, marginBottom: 24 }}>Processo Seletivo</div>
@@ -67,9 +67,9 @@ const ProcessoPage = () => {
           </div>
 
           {/* Timeline horizontal */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 0, position: 'relative', marginBottom: 48 }}>
+          <div className="resp-grid-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 0, position: 'relative', marginBottom: 48 }}>
             {/* Linha conectora */}
-            <div style={{ position: 'absolute', top: 28, left: '12.5%', right: '12.5%', height: 2, background: 'linear-gradient(to right, #F97316, #0A0A0A)', zIndex: 0 }} />
+            <div className="resp-hide" style={{ position: 'absolute', top: 28, left: '12.5%', right: '12.5%', height: 2, background: 'linear-gradient(to right, #F97316, #0A0A0A)', zIndex: 0 }} />
             {fases.map((f, i) => (
               <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative', zIndex: 1 }}>
                 <div style={{

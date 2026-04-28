@@ -1,5 +1,6 @@
 // Contato Page
 const ContatoPage = () => {
+  const isMobile = window.innerWidth <= 768;
   const [form, setForm] = React.useState({ nome: '', email: '', assunto: '', mensagem: '' });
   const [enviado, setEnviado] = React.useState(false);
   const [loading, setLoading] = React.useState(false);
@@ -30,7 +31,7 @@ const ContatoPage = () => {
   return (
     <div style={{ background: '#fff', minHeight: '100vh' }}>
       {/* HERO */}
-      <section style={{ background: '#0A0A0A', padding: '140px 48px 80px', position: 'relative', overflow: 'hidden' }}>
+      <section className="resp-hero" style={{ background: '#0A0A0A', padding: '140px 48px 80px', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', top: 0, right: 0, width: '35%', height: '100%', background: 'linear-gradient(to left, rgba(249,115,22,0.06), transparent)' }} />
         <div style={{ maxWidth: 1280, margin: '0 auto', position: 'relative', zIndex: 2 }}>
           <div style={{ display: 'inline-block', background: '#F97316', color: '#fff', fontFamily: 'Oswald, sans-serif', fontSize: 11, fontWeight: 500, letterSpacing: '0.2em', textTransform: 'uppercase', padding: '5px 14px', borderRadius: 2, marginBottom: 24 }}>Contato</div>
@@ -45,7 +46,7 @@ const ContatoPage = () => {
 
       {/* CONTEÚDO */}
       <section style={{ padding: '80px 48px 96px', background: '#fff' }}>
-        <div style={{ maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1.6fr', gap: 80, alignItems: 'start' }}>
+        <div className="resp-grid" style={{ maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1.6fr', gap: 80, alignItems: 'start' }}>
 
           {/* Canais */}
           <div>
@@ -103,7 +104,7 @@ const ContatoPage = () => {
               </div> :
 
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+                <div className="resp-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
                   <div>
                     <label style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 11, fontWeight: 600, color: '#888', textTransform: 'uppercase', letterSpacing: '0.1em', display: 'block', marginBottom: 6 }}>Nome</label>
                     <input name="nome" value={form.nome} onChange={handleChange} placeholder="Seu nome completo" required style={inputStyle}
