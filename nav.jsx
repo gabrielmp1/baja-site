@@ -24,8 +24,7 @@ const NavBar = ({ currentPage, setPage }) => {
   const navStyle = {
     position: 'fixed', top: 0, left: 0, right: 0, zIndex: 1000,
     background: scrolled ? 'rgba(10,18,42,0.97)' : 'rgba(10,18,42,0.0)',
-    backdropFilter: scrolled ? 'blur(12px)' : 'none',
-    transition: 'all 0.35s ease',
+    transition: 'background 0.35s ease, border-bottom 0.35s ease',
     borderBottom: scrolled ? '1px solid rgba(249,115,22,0.15)' : 'none'
   };
 
@@ -108,7 +107,6 @@ const NavBar = ({ currentPage, setPage }) => {
           .mobile-menu-btn { display: flex !important; }
           nav {
             background: rgba(10,18,42,0.97) !important;
-            backdrop-filter: blur(12px) !important;
             border-bottom: 1px solid rgba(249,115,22,0.15) !important;
           }
         }
