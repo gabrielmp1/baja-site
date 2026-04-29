@@ -33,7 +33,7 @@ const NavBar = ({ currentPage, setPage }) => {
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: 72 }}>
         {/* Logo */}
         <button onClick={() => {setPage('home');setMenuOpen(false);}} style={{ background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 10 }}>
-          <img src="escudo-nobg.png" alt="Baja Griffon" style={{ objectFit: 'contain', display: 'block', width: "52px", height: "52px" }} />
+          <img src="escudo-nobg.png?v=2" alt="Baja Griffon" style={{ objectFit: 'contain', display: 'block', width: "52px", height: "52px" }} />
           <div style={{ textAlign: 'left' }}>
             <div style={{ color: '#fff', fontFamily: 'Oswald, sans-serif', fontWeight: 700, fontSize: 16, lineHeight: 1.1, letterSpacing: '0.04em', textTransform: 'uppercase' }}>BAJA GRIFFON</div>
             <div style={{ color: 'rgba(249,115,22,0.85)', fontFamily: 'DM Sans, sans-serif', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', fontWeight: 500 }}>IFF · Campos Centro</div>
